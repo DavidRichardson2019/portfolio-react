@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
-import projectsData from '../data/projectsData.js';
+import AppImages from '../data/AppImages.js';
 
 class Projects extends Component {
   render(){
@@ -41,7 +41,7 @@ class Projects extends Component {
         <Grid style={style.wrapper} container direction="column" justify="space-evenly" alignItems="center">
           <h1 style={style.title}>Projects</h1>
           <Grid style={style.contents} container direction="column" justify="space-evenly" alignItems="center">
-            {projectsData.map(project =>(
+            {AppImages.projects.map(project =>(
               <Grid style={style.project} container direction="row" justify="center" alignItems="center">
                 <img style={style.projectImg} src={project.img} alt=""></img>
                 <Grid style={style.projectContent} container direction="column" justify="space-evenly" alignItems="center">

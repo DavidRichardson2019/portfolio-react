@@ -5,7 +5,7 @@ import profileImage from '../images/david-profile.jpg';
 class Header extends Component {
   render(){
     let style = {
-      grid: {
+      wrapper: {
         'height': '95vh',
       },
       avatar: {
@@ -38,7 +38,7 @@ class Header extends Component {
         direction="column"
         justify="center"
         alignItems="center"
-        style={style.grid}
+        style={style.wrapper}
       >
         <Avatar alt="" src={profileImage} style={style.avatar}/>
         <div style={style.content}>
