@@ -1,21 +1,87 @@
-let array = [];
-function size(screenSize){
-  images = 0;
-  switch(screenSize) {
-    case 1:
-      images = 5;
-      break;
-    case 2:
-      images = 6;
-      break;
-    case 3:
-      images = 10;
-      break;
-    case 4:
-      images = 15;
-      break;
-  }
-}
+import image1 from '../images/image1.JPG';
+import image2 from '../images/image2.JPG';
+import image3 from '../images/image3.JPG';
+import image4 from '../images/image4.JPG';
+import image5 from '../images/image5.JPG';
+import image6 from '../images/image6.JPG';
+import image7 from '../images/image7.JPG';
+import image8 from '../images/image8.JPG';
+import image9 from '../images/image9.JPG';
+import image10 from '../images/image10.JPG';
+
+let array = [
+  {
+    img: image1,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: image2,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: image3,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: image4,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: image5,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: image6,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: image7,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: image8,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: image9,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+  {
+    img: image10,
+    title: '',
+    author: '',
+    cols: 1,
+    rows: 1,
+  },
+];
+
 //Fisher-Yates Shuffle Algorithm
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
