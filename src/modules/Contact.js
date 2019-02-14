@@ -12,10 +12,9 @@ class Contact extends Component {
         'height': 'auto',
         'backgroundColor': '#F1ECE9',
       },
-
       avatarWrapper: {
-        'text-align': 'center',
-        'font-size' : '1.5em',
+        'textAlign': 'center',
+        'fontSize' : '1.5em',
         'margin': '1vw',
       },
       avatar: {

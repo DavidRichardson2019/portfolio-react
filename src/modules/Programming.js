@@ -14,7 +14,6 @@ class Programming extends Component {
       content: {
         'height': 'auto',
         'width': '100%',
-        'width': '100%',
       },
       img: {
         'width':'30vh',
@@ -30,8 +29,8 @@ class Programming extends Component {
         <Grid container direction="column" justify="space-evenly" alignItems="center" style={style.wrapper}>
           <h1>Programming</h1>
           <Grid container direction="column" justify="space-evenly" alignItems="center" style={style.content}>
-            <img src={img} style={style.img}/>
-            <Grid direction="column" justify="center" alignItems="flex-start" style={style.textWrap}>
+            <img src={img} style={style.img} alt=""/>
+            <Grid container direction="column" justify="center" alignItems="flex-start" style={style.textWrap}>
               <h3>Programming Style</h3>
               <p>To me, style is a verry important part of being a developer. Not only in the style of the GUI, but also in the style of the code. Code is like a work of art, there are a million ways to solve a problem with code and it's up to your personal style to find your solution. I like to make my code as neat and readable as possible, that is one of my first priorities because as a developer in the professional world if you leave a project it needs to be clean for the next developer. In web, I also prioritise responsiveness. In this mobile world we live in it's verry imortant that apps and websites work for everyone.</p>
               <h3>Languages</h3>

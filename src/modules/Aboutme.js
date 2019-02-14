@@ -5,9 +5,6 @@ import img1 from '../images/longboard.jpg'
 import img2 from '../images/jeep.jpg'
 import img3 from '../images/quadcopter.jpg'
 class Aboutme extends Component {
-  constructor (props) {
-    super(props);
-  }
   render(){
     let style = {
       wrapper: {
