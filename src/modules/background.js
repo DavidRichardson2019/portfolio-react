@@ -8,15 +8,16 @@ const imageList = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'imag
 class Background extends Component {
   state = {
     cols: 2,
-    cellHeight: 300,
+    cellHeight: 50,
     numImages: 9,
     sizeClass: '',
     shuffledImages: imageList,
     images: [],
   }
   sizeChanged = () => {
-    const { height, width } = this.props;
+    const { width } = this.props;
     const { shuffledImages, sizeClass } = this.state;
+    const height = window.screen.height;
     switch (width) {
       case 'xl':
         if (sizeClass !== 'xl') {
@@ -71,7 +72,6 @@ class Background extends Component {
   }
   importImages = async (numberToImport) => {
     const shuffledImages = this.shuffleImages();
-    console.log(shuffledImages);
     const promises = shuffledImages.map(async (image, i) => {
       if (i <= numberToImport) {
         return await import(`../images/${image}`);
