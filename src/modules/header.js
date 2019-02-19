@@ -6,7 +6,7 @@ class Header extends Component {
   render(){
     let style = {
       wrapper: {
-        'height': '95vh',
+        'height': '98vh',
       },
       avatar: {
         'width': 200,
