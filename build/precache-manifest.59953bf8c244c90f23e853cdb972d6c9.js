@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/jeep.63f3e2a8.jpg"
   },
   {
-    "revision": "b0576b71c738869304e3",
+    "revision": "2cb1f1fdfe5cc7da41f9",
     "url": "/static/css/main.a1804ad3.chunk.css"
   },
   {
@@ -128,8 +128,8 @@ self.__precacheManifest = [
     "url": "/static/media/longboard.a590acff.jpg"
   },
   {
-    "revision": "b0576b71c738869304e3",
-    "url": "/static/js/main.b0576b71.chunk.js"
+    "revision": "2cb1f1fdfe5cc7da41f9",
+    "url": "/static/js/main.2cb1f1fd.chunk.js"
   },
   {
     "revision": "180e2d9abb3fd66301e2eec5ec4f72b4",
@@ -256,7 +256,7 @@ self.__precacheManifest = [
     "url": "/static/media/website-pic.6ff4891b.jpg"
   },
   {
-    "revision": "35c88862987303a9bdeeae591edeba51",
+    "revision": "30a14db0dcbc828c00763988d6e553ec",
     "url": "/index.html"
   }
 ];

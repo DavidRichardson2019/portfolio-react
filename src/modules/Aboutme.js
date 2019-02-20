@@ -12,7 +12,6 @@ class Aboutme extends Component {
         'paddingBottom': '5vh',
         'height': 'auto',
         'backgroundColor': '#A6A5A1',
-        'clipPath': 'polygon(0 2.5%, 100% 0%, 100% 100%, 0 100%)',
       },
       content: {
         'height': 'auto',
