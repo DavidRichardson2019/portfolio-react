@@ -25,8 +25,14 @@ const projectsStyle = ({breakpoints}: Theme) => createStyles({
     },
   },
   projectImgWrapper: {
-    width:'95vw',
-    height:'45vh',
+    [breakpoints.up('xs')]: {
+      width:'95vw',
+      height:'45vh',
+    },
+    [breakpoints.up('md')]: {
+      width:'25vw',
+      height:'45vh',
+    },
     marginBottom: '1vh',
   },
   projectContent: {
@@ -46,7 +52,7 @@ const projectsStyle = ({breakpoints}: Theme) => createStyles({
 class Projects extends Component {
   getStyle = (key) => {
     const { width } = this.props;
-    if(key === "3" && (width === 'xs' || width === 'sm')) {
+    if(key === "3") {
       return {width: '100%'};
     }else {
       return {height: '100%'};
