@@ -6,22 +6,22 @@ class Programming extends Component {
   render(){
     let style = {
       wrapper: {
-        'paddingTop':'5vh',
-        'paddingBottom': '5vh',
-        'height': 'auto',
-        'backgroundColor': '#F1ECE9',
+        paddingTop:'5vh',
+        paddingBottom: '5vh',
+        height: 'auto',
+        backgroundColor: '#F1ECE9',
       },
       content: {
-        'height': 'auto',
-        'width': '100%',
+        height: 'auto',
+        width: '100%',
       },
       img: {
-        'width':'30vh',
-        'height':'30vh',
+        width:'30vh',
+        height:'30vh',
       },
       textWrap: {
-        'width':'95vw',
-        'textAlign': 'left',
+        width:'95vw',
+        textAlign: 'left',
       },
     }
     return(

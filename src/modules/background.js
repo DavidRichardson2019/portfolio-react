@@ -16,7 +16,7 @@ class Background extends Component {
   }
   sizeChanged = () => {
     const { width } = this.props;
-    const { shuffledImages, sizeClass } = this.state;
+    const { sizeClass } = this.state;
     const height = window.screen.height;
     switch (width) {
       case 'xl':
@@ -35,7 +35,35 @@ class Background extends Component {
         });
         break;
       case 'lg':
+        if (sizeClass !== 'lg') {
+          this.setState({
+            cols: 3,
+            numImages: 9,
+            sizeClass: 'lg'
+          });
+
+          this.importImages(9);
+        }
+
+        this.setState({
+          cellHeight: height / 3
+        });
+        break;
       case 'md':
+        if (sizeClass !== 'md') {
+          this.setState({
+            cols: 3,
+            numImages: 9,
+            sizeClass: 'md'
+          });
+
+          this.importImages(9);
+        }
+
+        this.setState({
+          cellHeight: height / 3
+        });
+        break;
       case 'sm':
         if (sizeClass !== 'sm') {
           this.setState({
