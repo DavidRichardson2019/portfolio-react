@@ -32,7 +32,7 @@ class Programming extends Component {
             <img src={img} style={style.img} alt=""/>
             <Grid container direction="column" justify="center" alignItems="flex-start" style={style.textWrap}>
               <h3>Programming Style</h3>
-              <p>To me, style is a verry important part of being a developer. Not only in the style of the GUI, but also in the style of the code. Code is like a work of art, there are a million ways to solve a problem with code and it's up to your personal style to find your solution. I like to make my code as neat and readable as possible, that is one of my first priorities because as a developer in the professional world if you leave a project it needs to be clean for the next developer. In web, I also prioritise responsiveness. In this mobile world we live in it's verry imortant that apps and websites work for everyone.</p>
+              <p>To me, style is a very important part of being a developer. Not only in the style of the GUI, but also in the style of the code. Code is like a work of art, there are a million ways to solve a problem with code and it's up to your personal style to find your solution. I like to make my code as neat and readable as possible, that is one of my first priorities because as a developer in the professional world if you leave a project it needs to be clean for the next developer. In the web, I also prioritize responsiveness. In this mobile world we live in, it's very important that apps and websites work for everyone.</p>
               <h3>Languages</h3>
               <ul>
                 <li>Python</li>

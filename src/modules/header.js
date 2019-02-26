@@ -65,7 +65,7 @@ class Header extends Component {
          alignItems="center"
          className={classes.content}>
           <h1>David Richardson</h1>
-          <h3>Developer, Aspiring Designer, and Serial Hobbyst.</h3>
+          <h3>Developer, Aspiring Designer, and Serial Hobbyist.</h3>
         </Grid>
       </Grid>
     );
