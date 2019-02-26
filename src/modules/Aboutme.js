@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
-import Avatar from '@material-ui/core/Avatar';
 import img1 from '../images/longboard.jpg'
 import img2 from '../images/jeep.jpg'
 import img3 from '../images/quadcopter.jpg'
 import { withStyles, createStyles } from '@material-ui/core/styles';
 import withWidth from '@material-ui/core/withWidth';
 import PropTypes from 'prop-types';
+import { Parallax, Background } from 'react-parallax';
+
 const aboutMeStyle = ({breakpoints}: Theme) => createStyles({
   wrapper: {
     paddingTop:'5vh',
@@ -30,15 +31,29 @@ const aboutMeStyle = ({breakpoints}: Theme) => createStyles({
     [breakpoints.up('xs')]: {
       width: '43vw',
       height: '43vw',
+      borderRadius:'43vw',
     },
     [breakpoints.up('md')]: {
       width: '15vw',
       height: '15vw',
+      borderRadius:'15vw',
     },
     margin: '.5vh',
     borderWidth: 'thick',
     borderStyle: 'solid',
     borderColor: '#D7443F',
+    zIndex:'1',
+  },
+  imgWrapper: {
+    zIndex:'-1',
+  },
+  img: {
+    [breakpoints.up('xs')]: {
+      width:'57vw',
+    },
+    [breakpoints.up('md')]: {
+      width:'20vw',
+    },
   },
   title: {
     margin: '1.5vh',
@@ -115,9 +130,22 @@ class Aboutme extends Component {
           <h1>About Me</h1>
           <Grid container direction={contentDirection} justify="space-evenly" alignItems="center" className={classes.content}>
             <Grid container direction={imageWrapperDirection} justify="space-evenly" alignItems="center" className={classes.imageWrapper}>
-              <Avatar alt="" src={img1} className={classes.avatar}/>
-              <Avatar alt="" src={img2} className={classes.avatar}/>
-              <Avatar alt="" src={img3} className={classes.avatar}/>
+
+              <Parallax className={classes.avatar} strength={65}>
+                <Background className={classes.imgWrapper}>
+                  <img className={classes.img} src={img1} alt=""/>
+                </Background>
+              </Parallax>
+              <Parallax className={classes.avatar} strength={65}>
+                <Background>
+                  <img className={classes.img} src={img2} alt=""/>
+                </Background>
+              </Parallax>
+              <Parallax className={classes.avatar} strength={65}>
+                <Background>
+                  <img className={classes.img} src={img3} alt=""/>
+                </Background>
+              </Parallax>
             </Grid>
             <div className={classes.aboutMeText}>
               <h3 className={classes.title}>Serial Hobbyst</h3>

@@ -139,14 +139,16 @@ class Background extends Component {
     }
   }
   render() {
-    const style = {
+    const wrapper = {
       width:'100vw',
     }
-
+    const style = {
+      marginTop:'125px',
+    }
     const { cellHeight, cols } = this.state;
     return (
-      <div style={style}>
-        <GridList cellHeight={cellHeight} className="" cols={cols}>
+      <div style={wrapper}>
+        <GridList style={style} cellHeight={cellHeight} className="" cols={cols}>
           {this.state.images.map(image => (
             <GridListTile cols={1} rows={1}>
               <img src={image.default} alt={''} />

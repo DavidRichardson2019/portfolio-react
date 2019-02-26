@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid';
-
 import img from '../images/languages.png';
+import { Parallax, Background } from 'react-parallax';
 class Programming extends Component {
   render(){
     let style = {

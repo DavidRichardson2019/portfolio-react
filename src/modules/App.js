@@ -10,13 +10,13 @@ import { Parallax, Background } from 'react-parallax';
 class App extends Component {
   render() {
     const style = {
-      width: '100vw',
+      transform:'translate(0px,300px)',
     }
     return (
       <div>
-        <Parallax blur={{ min: -15, max: 15 }}>
+        <Parallax strength={300}>
           <Header />
-          <Background>
+          <Background style={style}>
             <HeaderBackground/>
           </Background>
         </Parallax>

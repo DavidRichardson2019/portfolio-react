@@ -51,7 +51,6 @@ const projectsStyle = ({breakpoints}: Theme) => createStyles({
 });
 class Projects extends Component {
   getStyle = (key) => {
-    const { width } = this.props;
     if(key === "3") {
       return {width: '100%'};
     }else {
