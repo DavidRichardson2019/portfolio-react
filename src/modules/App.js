@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
-import Background from './background.js';
+import HeaderBackground from './background.js';
 import Header from './header.js';
 import AboutMe from './Aboutme.js';
 import Programming from './Programming.js';
 import Projects from './Projects.js';
 import Contact from './Contact.js';
+import { Parallax, Background } from 'react-parallax';
 
 class App extends Component {
   render() {
+    const style = {
+      width: '100vw',
+    }
     return (
       <div>
-        <Background />
-        <Header />
+        <Parallax blur={{ min: -15, max: 15 }}>
+          <Header />
+          <Background>
+            <HeaderBackground/>
+          </Background>
+        </Parallax>
         <AboutMe />
         <Programming />
         <Projects />

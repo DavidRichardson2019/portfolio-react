@@ -140,8 +140,7 @@ class Background extends Component {
   }
   render() {
     const style = {
-      zIndex: -1,
-      position: 'fixed',
+      width:'100vw',
     }
 
     const { cellHeight, cols } = this.state;
